@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ne"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Login | Bethanchok Nari Chetana</title><link rel="stylesheet" href="styles.css"></head>
+<body class="admin-login-page">
+<div class="admin-login-wrap">
+  <div class="admin-login-card">
+    <img src="assets/official-logo-wide.png" class="admin-login-logo" alt="Bethanchok Nari Chetana">
+    <span class="section-kicker">ADMINISTRATOR</span>
+    <h1>Admin Login</h1>
+    <p>Website व्यवस्थापनका लागि authorized administrator मात्र login गर्नुहोस्।</p>
+    <form id="adminLoginForm">
+      <label>Username<input id="adminUser" required autocomplete="username" placeholder="Admin username"></label>
+      <label>Password<input id="adminPass" required type="password" autocomplete="current-password" placeholder="Admin password"></label>
+      <button class="btn primary" type="submit">Login to Dashboard</button>
+      <div id="adminLoginMsg" class="login-message"></div>
+    </form>
+    <small>Demo credentials: <b>admin</b> / <b>admin123</b></small>
+  </div>
+</div>
+<script src="script.js?v=3.2"></script></body></html>

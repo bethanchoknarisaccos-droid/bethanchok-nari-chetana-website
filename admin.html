@@ -1,0 +1,26 @@
+<!doctype html><html lang="ne"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Dashboard | Bethanchok Nari Chetana</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="topbar"><div class="container topbar-inner"><span>Admin Dashboard</span><div><span id="adminWelcome"></span> <button id="adminLogout" class="small-btn">Logout</button></div></div></header>
+<nav class="nav"><div class="container nav-inner"><a class="brand" href="index.html"><img class="brand-logo" src="assets/official-logo-wide.png" alt="Official logo"></a><div class="links admin-links"><a href="index.html">Website</a><a href="leadership.html">Leadership</a></div></div></nav>
+<main>
+<section class="page-hero"><div class="container"><span class="section-kicker">ADMIN DASHBOARD</span><h1>Website Management</h1><p>Slider, Gallery, Notice, Board र Employee व्यवस्थापन।</p></div></section>
+<section class="section"><div class="container admin-dashboard-grid">
+
+<div class="admin-card"><h2>📸 Homepage Slider</h2><p>Homepage मा देखिने automatic slideshow का फोटो व्यवस्थापन गर्नुहोस्।</p>
+<div class="upload-row"><label>Slide 1<input type="file" accept="image/*" data-upload-slider="0"></label><label>Slide 2<input type="file" accept="image/*" data-upload-slider="1"></label><label>Slide 3<input type="file" accept="image/*" data-upload-slider="2"></label></div><div id="sliderPreview" class="admin-preview-grid"></div></div>
+
+<div class="admin-card"><h2>📰 Notice / News</h2><p>Homepage को notice board मा देखाउने सूचना व्यवस्थापन।</p>
+<form id="noticeForm"><input id="noticeTitle" required placeholder="सूचनाको शीर्षक"><textarea id="noticeText" required placeholder="सूचनाको विवरण"></textarea><button class="btn primary">Add Notice</button></form><div id="noticeList"></div></div>
+
+<div class="admin-card"><h2>🖼️ Gallery</h2><p>Website gallery मा फोटो थप्नुहोस्।</p><input id="galleryUpload" type="file" accept="image/*" multiple><div id="galleryAdminPreview" class="admin-preview-grid"></div></div>
+
+<div class="admin-card"><h2>👩‍💼 Board Member Photos</h2><div id="boardUploadList" class="admin-person-list"></div></div>
+<div class="admin-card"><h2>👥 Employee Photos</h2><div id="staffUploadList" class="admin-person-list"></div></div>
+
+<div class="admin-card"><h2>⚙️ Website Settings</h2><label>Organization phone<input id="settingPhone" value="9849343124"></label><label>Email<input id="settingEmail" value="bethanchok.narisaccos@gmail.com"></label><button id="saveSettings" class="btn primary">Save Settings</button><span id="adminMsg" class="admin-msg"></span></div>
+
+</div></section>
+</main>
+<footer><div class="container footer-grid"><div><h3>बेथानचोक नारी चेतना</h3><p>Admin Dashboard</p></div><div><h4>Quick Links</h4><p><a href="index.html">Website</a> · <a href="leadership.html">Leadership</a></p></div><div><h4>Contact</h4><p>9849343124<br>bethanchok.narisaccos@gmail.com</p></div></div><div class="copyright">© 2026 Bethanchok Nari Chetana Saving and Credit Cooperative Society Ltd.</div></footer>
+<script src="script.js?v=3.2"></script></body></html>
